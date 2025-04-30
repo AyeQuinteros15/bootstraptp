@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajo Práctico Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    section.actividad {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    section.actividad:last-of-type {
+      border-bottom: none;
+    }
+    body {
+      padding-top: 70px;
+    }
+    #actividad8 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Cursos Web</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#seccion">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Actividad 1 -->
+<section class="container actividad">
+  <h1>Hola Bootstrap</h1>
+  <p>Bootstrap es un framework CSS que facilita el desarrollo de sitios web responsivos y modernos utilizando componentes ya diseñados.</p>
+</section>
+
+<!-- Actividad 2 -->
+<section class="actividad">
+    <div class="container">
+      <h2>Actividad 2: Tipos de contenedores</h2>
+    </div>
+    <div class="container border border-primary bg-primary text-white p-3 mb-2">Contenedor .container</div>
+    <div class="container-fluid border border-success bg-success text-white p-3 mb-2">Contenedor .container-fluid</div>
+    <div class="container-md border border-danger bg-danger text-white p-3">Contenedor .container-md</div>
+  </section>
+  
+
+<!-- Actividad 3 -->
+<section class="container actividad">
+    <h2>Actividad 3: Armando grillas</h2>
+    <div class="row text-center">
+      <div class="col-12 col-sm-6 col-md-4 bg-light p-2">Columna A</div>
+      <div class="col-12 col-sm-6 col-md-4 bg-secondary text-white p-2">Columna B</div>
+      <div class="col-12 col-sm-6 col-md-4 bg-light p-2">Columna C</div>
+    </div>
+  </section>  
+
+<!-- Actividad 4 -->
+<section class="container actividad">
+    <h2>Actividad 4: Componentes esenciales</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarActividad4" aria-controls="navbarActividad4" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarActividad4">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <button class="btn btn-primary mb-2">Click aqui</button>
+    <div class="alert alert-warning" role="alert">Esta es una advertencia.</div>
+    <div class="card mt-2" style="width: 18rem;">
+      <img src="act4.jpg" class="card-img-top" alt="Imagen de Bootstrap">
+      <div class="card-body">
+        <h5 class="card-title">Curso de Bootstrap 5</h5>
+        <p class="card-text">Aprendé a crear sitios web modernos, responsivos y profesionales con el framework más popular de CSS. Incluye componentes, grillas, formularios y más.</p>
+        <a href="#" class="btn btn-primary">Ver curso</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Actividad 5 -->
+<section class="container actividad">
+  <h2>Actividad 5: Diseño responsivo con columnas</h2>
+  <div class="row text-center">
+    <div class="col-12 col-sm-6 col-lg-3 p-2 bg-light">Columna 1</div>
+    <div class="col-12 col-sm-6 col-lg-3 p-2 bg-secondary text-white">Columna 2</div>
+    <div class="col-12 col-sm-6 col-lg-3 p-2 bg-light">Columna 3</div>
+    <div class="col-12 col-sm-6 col-lg-3 p-2 bg-secondary text-white">Columna 4</div>
+  </div>
+</section>
+
+<!-- Actividad 6 -->
+<section class="container actividad">
+  <h2>Actividad 6: Formulario estilizado</h2>
+  <form>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    <div class="mb-3">
+      <label for="comentario" class="form-label">Comentario</label>
+      <textarea class="form-control" id="comentario" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>
+
+<!-- Actividad 7 -->
+<section class="container actividad">
+  <h2>Actividad 7: Galería con tarjetas y ventana modal</h2>
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-md-4 mb-2">
+      <div class="card h-100">
+        <img src="html.jpg" class="card-img-top" alt="Curso HTML" style="object-fit: cover; height: 180px;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Curso de HTML</h5>
+          <p class="card-text">Aprende a estructurar páginas web con HTML5 desde cero, ideal para principiantes.</p>
+          <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal1">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 mb-2">
+      <div class="card h-100">
+        <img src="css.jpg" class="card-img-top" alt="Curso CSS" style="object-fit: cover; height: 180px;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Curso de CSS</h5>
+          <p class="card-text">Domina estilos, colores y diseño responsivo con CSS moderno y buenas prácticas.</p>
+          <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal2">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 mb-2">
+      <div class="card h-100">
+        <img src="bootstrap.jpg" class="card-img-top" alt="Curso Bootstrap" style="object-fit: cover; height: 180px;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Curso de Bootstrap</h5>
+          <p class="card-text">Crea sitios web modernos y adaptables usando los componentes de Bootstrap 5.</p>
+          <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#modal3">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body bg-white text-dark p-3">
+        <img src="codigo.jpg" class="img-fluid mb-2" alt="HTML Avanzado">
+        <p>Este curso de HTML cubre desde etiquetas básicas hasta formularios y estructuras semánticas. Perfecto para comenzar tu carrera en desarrollo web.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body bg-white text-dark p-3">
+        <img src="css2.jpg" class="img-fluid mb-2" alt="CSS avanzado">
+        <p>Aprende a usar selectores, variables, flexbox y grid para maquetar sitios profesionales y responsivos con CSS.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body bg-white text-dark p-3">
+        <img src="boos2.jpg" class="img-fluid mb-2" alt="Bootstrap Detallado">
+        <p>Descubre cómo usar Bootstrap para implementar botones, grillas, formularios y componentes interactivos con rapidez y consistencia.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Actividad 8 -->
+<!-- Sección principal -->
+<div class="container mt-5 pt-5" id="seccion">
+  <h2 class="mb-4">Bienvenido a Cursos Web</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p>Ofrecemos una variedad de cursos online para que aprendas a crear sitios web modernos,desde los fundamentos del desarrollo hasta tecnologías avanzadas como Bootstrap y JavaScript.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="cursoweb.png" class="img-fluid rounded" alt="Cursos web">
+    </div>
+  </div>
+</div>
+
+<!-- Galería -->
+<div class="container mt-5" id="galeria">
+  <h2 class="mb-4">Galería de Cursos</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <img src="htmlcero.jpg" class="card-img-top" alt="HTML Básico" style="object-fit: cover; height: 180px;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">HTML desde cero</h5>
+          <p class="card-text">Aprende la estructura de una página web con ejemplos prácticos y ejercicios guiados.</p>
+          <a href="#" class="btn btn-outline-primary mt-auto">Explorar curso</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <img src="cssavanzado.jpg" class="card-img-top" alt="CSS avanzado" style="object-fit: cover; height: 180px;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">CSS Profesional</h5>
+          <p class="card-text">Diseña sitios responsivos con Flexbox, Grid y técnicas modernas de maquetación.</p>
+          <a href="#" class="btn btn-outline-primary mt-auto">Explorar curso</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card h-100">
+        <img src="js.png" class="card-img-top" alt="JavaScript" style="object-fit: cover; height: 180px;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">JavaScript Interactivo</h5>
+          <p class="card-text">Domina la lógica de programación para crear experiencias dinámicas en tu sitio web.</p>
+          <a href="#" class="btn btn-outline-primary mt-auto">Explorar curso</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Formulario de contacto -->
+<div class="container mt-5" id="contacto">
+  <h2 class="mb-4">Contacto</h2>
+  <p>¿Tenés dudas sobre algún curso o querés recibir novedades? Completá el formulario y nos pondremos en contacto.</p>
+  <form>
+    <div class="mb-3">
+      <label for="nombre2" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre2" placeholder="Tu nombre">
+    </div>
+    <div class="mb-3">
+      <label for="email2" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email2" placeholder="correo@ejemplo.com">
+    </div>
+    <div class="mb-3">
+      <label for="comentario2" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="comentario2" rows="4" placeholder="Escribí tu consulta o comentario..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Contacto</h5>
+        <p>Email: info@cursosweb.com</p>
+        <p>Tel: +54 3865 322031</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Enlaces</h5>
+        <ul class="list-unstyled">
+          <li><a href="#seccion" class="text-white text-decoration-none">Inicio</a></li>
+          <li><a href="#galeria" class="text-white text-decoration-none">Galería</a></li>
+          <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Redes sociales</h5>
+        <p>Seguinos en:</p>
+        <p>Facebook | Instagram</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
